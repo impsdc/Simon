@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Simon</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Bouton Règles-->
+    <button class="regles" id="openModal">Règles</button>
+
+    <!-- Modal de Règles -->
+    <div id="Modal" class="modal">
+        <div class="modal_content">
+            <span class="closeModal">&times;</span>
+            <div class="modal-body">
+                <p>Bienvenue sur Super Simon !</p>
+                <p>Cliquez sur Jouer pour commencer la partie.</p>
+                <p>Règles :</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exter">
+
+        <div class="vert box" onclick=""></div>
+        <div class="rouge box" onclick=""></div>
+        <div class="jaune box" onclick=""></div>
+        <div class="bleu box" onclick=""></div>
+
+        <div class="center">
+            <div class="wrapper" id=""> 
+               <div class="score">
+                    <span>Tour terminé : </span> 
+                    <b id="ScoreByRound">0</b>
+               </div>
+                <div class="score">
+                        <span>Case validées : </span> 
+                        <b id="ScoreByClick">0</b>
+                </div>
+                <button class="play" onclick="start()">Jouer</button>
+            </div>
+            
+        </div>
+
+    </div>
+        
+    <script async defer src="main.js"></script>
+</body>
+</html>

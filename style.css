@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#161616; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Modal de Regles */
+.regles{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 15px; 
+    border: none;
+    color:#fff;  
+    padding: 10px 16px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    text-align: center;
+}
+
+.modal_content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: sliding;
+    animation-duration: 0.8s
+}
+
+@keyframes sliding {
+    from {top:-150px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.closeModal{
+    color: rgb(26, 26, 26);
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.exter {
+    background: #f0f5ff;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+}
+.box{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    border:2px solid rgba(0,0,0,1);
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+
+}
+.vert{
+    border-radius: 250px 0 0 0; 
+    background: green;
+    margin: -250px 0px 0px -250px;
+}
+
+.rouge {
+    border-radius: 0 250px 0 0;
+    background: red;
+    margin: -250px 0px 0px 0px;
+}
+
+.jaune {
+    border-radius: 0  0 0 250px ;
+    background: yellow;
+    margin: 0px -250px 0px -250px;
+}
+
+.bleu {
+    border-radius: 0 0 250px 0;
+    background: blue;
+    margin: 0px 0px -250px 0px;
+}
+
+.center{
+   position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #576574;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #161616;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.score b {
+    margin: 0;
+    cursor: default;
+}
+/* Boutons */
+
+.play{
+    color: #fff;;
+    margin-top: 10px;
+    height: 30px;
+    width: 90%;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    background: #161616;
+    border: 1px solid #161616;
+    transition: 0.5s;
+}
+.play:hover{
+    background: transparent;
+}
