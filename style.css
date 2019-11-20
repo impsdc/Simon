@@ -66,7 +66,7 @@ body{
 }
 
 .exter {
-    background: #f0f5ff;
+    background: transparent;
     border-radius: 50%;
     height: 500px;
     width: 500px;
@@ -78,7 +78,6 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 250px 0 0 0;
-    border:2px solid rgba(0,0,0,1);
     box-sizing: border-box;
     top: 50%;
     left: 50%;
@@ -87,27 +86,43 @@ body{
 }
 .vert{
     border-radius: 250px 0 0 0; 
+    /* border:5px solid green; */
     background: green;
-    margin: -250px 0px 0px -250px;
+    margin: -260px 0px 0px -270px;
 }
 
 .rouge {
     border-radius: 0 250px 0 0;
-    background: red;
-    margin: -250px 0px 0px 0px;
+    /* border:5px solid red; */
+     background:red;
+    margin: -260px 0px 0px 20px;
 }
 
 .jaune {
     border-radius: 0  0 0 250px ;
-    background: yellow;
-    margin: 0px -250px 0px -250px;
+      /* border:5px solid yellow; */
+      background: yellow;
+    margin: 10px -250px 0px -270px;
 }
 
 .bleu {
     border-radius: 0 0 250px 0;
-    background: blue;
-    margin: 0px 0px -250px 0px;
+    /* border:5px solid blue; */
+     background: blue;
+    margin: 10px 0px -250px 20px;
 }
+/* .bleu:hover{
+    background: blue;
+}
+.rouge:hover{
+    background:red;
+}
+.jaune:hover{
+    background: yellow;
+}
+.vert:hover{
+    background: green;
+} */
 
 .center{
    position: absolute;
@@ -138,20 +153,39 @@ body{
     cursor: default;
 }
 /* Boutons */
-
+.container{
+    display: flex;
+    justify-content: center;
+}
 .play{
-    color: #fff;;
-    margin-top: 10px;
+    color: #161616;;
+    margin: 15px;
     height: 30px;
-    width: 90%;
+    width: 100px;
     font-size: 17px;
     cursor: pointer;
     border-radius: 10px;
     outline: none;
-    background: #161616;
-    border: 1px solid #161616;
+    background: #fff;
+    border: 1px solid #fff;
     transition: 0.5s;
 }
 .play:hover{
     background: transparent;
+    color: #fff;
 }
+.effet{
+    opacity: 0.5;
+}
+/* .effet .bleu{
+    background: blue;
+}
+.effet .rouge{
+    background:red;
+}
+.effet .jaune{
+    background: yellow;
+}
+.effet .vert{
+    background: green;
+} */
