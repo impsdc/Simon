@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta shortcut icon="logo_noir.png"> 
     <title>Super Simon</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -16,48 +16,55 @@
     <!-- Modal de Règles -->
     <div id="Modal" class="modal">
         <div class="modal_content">
-            
+            <span class="closeModal">&times;</span>
             <div>
                 <p>Bienvenue sur Super Simon !</p>
-                <p>Cliquez sur Jouer pour commencer la partie.</p>
+                <p>Cliquez sur Start pour commencer la partie.</p>
                 <p>Règles :</p>
+                <a target="_blank" href="http://ludosierre.ch/zwook/liens/catalogue/1644/texte_fck/image/supersimon.pdf">Lien vers les règles</a>
             </div>
         </div>
     </div>
     <div id="gameOver" class="modal">
         <div class="modal_content">
             <span class="closeModal">&times;</span>
-            <p>Perdu !  Miskina tu t'es trompé</p>
+            <b>Game Over</b><br><br>
+            <span>Tour terminé : </span>
+            <p id="roundfinal">0</p>
+            <span>Case validées : </span> 
+            <p id="cliquefinal">0</p>
+            <button id="onReset" class="play">Reset</button>
         </div>
     </div>
 
     <div class="exter">
 
-  <div id="play">
-            <div id="vert" class="vert box" onclick=""></div>
-            <div id="rouge" class="rouge box" onclick=""></div>
-            <div id="jaune" class="jaune box" onclick=""></div>
-            <div id="bleu" class="bleu box" onclick=""></div>
-  </div>
+    <div id="play">
+                <div id="vert"class="vert box"></div>
+                <div id="rouge"class="rouge box"></div>
+                <div id="jaune" class="jaune box"></div>
+                <div id="bleu" class="bleu box"></div>
+    </div>
 
         <div class="center">
-            <div class="wrapper" id=""> 
-               <div class="score">
-                    <span>Tour terminé : </span> 
-                    <b id="ScoreByRound">0</b>
-               </div>
-                <div class="score">
-                        <span>Case validées : </span> 
-                        <b id="ScoreByClick">0</b>
-                </div>
-            </div>
+            <img src="logo_noir.png" alt="logo">
         </div>
     </div>
    <div class="container">
-        <button class="play" onclick="start()">Start</button>
-        <button class="play" onclick="start()">Reset</button>
+        <button id="onStart" class="play start">Start</button>
+        <div class="score">
+            <div>
+                <span>Tour terminé</span>
+                <b id="r">0</b>
+            </div>
+
+            <div>
+                <span>Case validées</span>
+                <b id="c">0</b>
+            </div>
+        </div>
    </div>
         
-    <script async defer src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
